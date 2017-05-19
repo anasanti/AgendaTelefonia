@@ -13,5 +13,14 @@ public class Adicionar {
 	public void addPessoa(Pessoa pessoa){
 		agenda.add(pessoa);
 	}
+
+	public ArrayList<Pessoa> getAgenda() {
+		return agenda;
+	}
+
+	public void setAgenda(ArrayList<Pessoa> agenda) {
+		this.agenda = agenda;
+	}
+	
 	
 }
