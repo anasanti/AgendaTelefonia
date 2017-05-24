@@ -2,32 +2,23 @@ package Pesquisa;
 
 import java.util.ArrayList;
 
-import Armazenamento.*;
+import Armazenamento.Adicionar;
+import Armazenamento.Pessoa;
 
-public class Pesquisa {
-	
+public class Listar {
 	private Adicionar agenda;
 	
-	public Pesquisa(Adicionar agenda){
+	public Listar(Adicionar agenda){
 		this.agenda = agenda;
 	}
 	
-	public int pesquisar(String nome){
-		
-		int telefone = 0;
+	public void listar(){
 		
 		ArrayList<Pessoa> lista = agenda.getAgenda();
-				
+		
 		for(int i = 0; i < lista.size() - 1; i++){
 			Pessoa pessoa = lista.get(i);
 			
-			if(pessoa.getNome() == nome){
-				telefone = pessoa.getTelefone();
-			}
 		}
-		return telefone;
 	}
-	
-	
-	
 }
