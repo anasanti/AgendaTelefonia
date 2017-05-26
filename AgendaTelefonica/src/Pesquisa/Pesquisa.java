@@ -18,10 +18,10 @@ public class Pesquisa {
 		
 		ArrayList<Pessoa> lista = agenda.getAgenda();
 				
-		for(int i = 0; i < lista.size() - 1; i++){
+		for(int i = 0; i < lista.size(); i++){
 			Pessoa pessoa = lista.get(i);
 			
-			if(pessoa.getNome() == nome){
+			if(pessoa.getNome().equals(nome)){
 				telefone = pessoa.getTelefone();
 			}
 		}
